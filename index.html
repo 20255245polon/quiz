@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzer</title>
+
+    <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #4CAF50;
+        }
+
+        .quiz-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question label {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .answer-box {
+            padding-left: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 12px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 20px;
+        }
+
+        .question input[type="radio"],
+        .question input[type="checkbox"] {
+            margin-top: 8px;
+        }
+
+        .question .answer-box {
+            margin-left: 20px;
+        }
+
+       
+
+        
+      
+    </style>    
+</head>
+
+<body>
+    <h1><center><b>QUIZZER</b></center></h1>
+    <hr><br>
+
+    <!-- Using textbox -->
+
+<form>
+    <div class="question">
+        <label for="q1">1. What is the capital of France?</label>
+        <input type="text" id="q1" name="q1">
+    </div><br>    
+
+    <div class="question">
+        <label for="q1">2. What is the capital of Italy?</label>
+        <input type="text" id="q1" name="q1">
+    </div><br>    
+
+    <div class="question">
+        <label for="q1">3. What is the capital of Japan?</label>
+        <input type="text" id="q1" name="q1">
+    </div><br>    
+
+    <div class="question">
+        <label for="q1">4. What is the capital of China?</label>
+        <input type="text" id="q1" name="q1">
+    </div><br>    
+</form><br><hr><br>    
+    
+    <!-- Using Radio Button -->
+<div class="question">
+    <label>5. What is the capital of Japan?</label>
+    <div class="answer-box">
+        <input type="radio" id="q5a" name="q5" value="Oslo">
+        <label for="q5a">Oslo</label><br>
+        <input type="radio" id="q5b" name="q5" value="Muscat">
+        <label for="q5b">Muscat</label><br>
+        <input type="radio" id="q5c" name="q5" value="Tokyo">
+        <label for="q5c">Tokyo</label><br>
+    </div>
+</div>
+
+<div class="question">
+    <label>6. What is the capital of India?</label>
+    <div class="answer-box">
+        <input type="radio" id="q6a" name="q6" value="Budapest">
+        <label for="q6a">Budapest</label><br>
+        <input type="radio" id="q6b" name="q6" value="New Delhi">
+        <label for="q6b">New Delhi</label><br>
+        <input type="radio" id="q6c" name="q6" value="Amman">
+        <label for="q6c">Amman</label><br>
+    </div>
+</div>
+
+<div class="question">
+    <label>7. What is the capital of Mexico?</label>
+    <div class="answer-box">
+        <input type="radio" id="q7a" name="q7" value="Mexico">
+        <label for="q7a">Mexico</label><br>
+        <input type="radio" id="q7b" name="q7" value="Port Luis">
+        <label for="q7b">Port Luis</label><br>
+        <input type="radio" id="q7c" name="q7" value="Rabat">
+        <label for="q7c">Rabat</label><br>
+    </div>
+</div><br><hr><br>
+
+
+    <!-- Using checkbox -->
+
+<div class="question">
+    <label>7. What is the capital of Morroco?</label>
+    <div class="answer-box">
+        <input type="checkbox" id="q7a" name="q7" value="Wellington">
+        <label for="q7a">Wellington</label><br>
+        <input type="checkbox" id="q7b" name="q7" value="Rabat">
+        <label for="q7b">Rabat</label><br>
+        <input type="checkbox" id="q7c" name="q7" value="Oslo">
+        <label for="q7c">Oslo</label><br>
+    </div>
+</div>
+
+<div class="question">
+    <label>7. What is the capital of Norway?</label>
+    <div class="answer-box">
+        <input type="checkbox" id="q7a" name="q7" value="Oslo">
+        <label for="q7a">Oslo</label><br>
+        <input type="checkbox" id="q7b" name="q7" value="Niamey">
+        <label for="q7b">Niamey</label><br>
+        <input type="checkbox" id="q7c" name="q7" value="Monaco">
+        <label for="q7c">Monaco</label><br>
+    </div>
+</div>
+
+<div class="question">
+    <label>7. What is the capital of Pakistan?</label>
+    <div class="answer-box">
+        <input type="checkbox" id="q7a" name="q7" value="Islamabad">
+        <label for="q7a">Islamabad</label><br>
+        <input type="checkbox" id="q7b" name="q7" value="Lima">
+        <label for="q7b">Lima</label><br>
+        <input type="checkbox" id="q7c" name="q7" value="Isla">
+        <label for="q7c">Isla</label><br>
+    </div>
+</div>
+
+
+
+</body>
+</html>
